@@ -17,7 +17,7 @@ spec:
       serviceAccountName: kubernetes-cloudflare-sync
       containers:
       - name: kubernetes-cloudflare-sync
-        image: gcr.io/kube-226720/kubernetes-cloudflare-sync
+        image: gcr.io/kube-226720/github.com/ip999/kubernetes-cloudflare-sync:latest
         args:
         - --dns-name=cloudnative.company
         env:
