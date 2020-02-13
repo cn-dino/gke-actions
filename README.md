@@ -12,6 +12,8 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License. -->
 
+![Build and Deploy to GKE](https://github.com/cn-dino/gke-actions/workflows/Build%20and%20Deploy%20to%20GKE/badge.svg?branch=master)
+
 # Google Kubernetes Engine - GitHub Actions
 
 An example workflow that uses [GitHub Actions](https://help.github.com/en/categories/automating-your-workflow-with-github-actions) to deploy [a static website](site/) to an existing [Google Kubernetes Engine](https://cloud.google.com/kubernetes-engine/) cluster.
