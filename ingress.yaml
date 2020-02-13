@@ -51,7 +51,7 @@ data:
       server {
         listen 80;
         location / {
-          proxy_pass http://gke-test.default.svc.cluster.local:8080;
+          proxy_pass http://gke-test-service.default.svc.cluster.local:8080;
         }
       }
     }
