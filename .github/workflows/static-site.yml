@@ -66,14 +66,14 @@ jobs:
       # Set up kustomize
       - name: Set up Kustomize
         run: |
-          cd infra
+          cd infra/static-site
           curl -o kustomize --location https://github.com/kubernetes-sigs/kustomize/releases/download/v3.1.0/kustomize_3.1.0_linux_amd64
           chmod u+x ./kustomize
 
       # Deploy the Docker image to the GKE cluster
       - name: Deploy
         run: |
-          cd infra
+          cd infra/static-site
           gcloud container clusters get-credentials $GKE_CLUSTER \
             --zone $GKE_ZONE --project $GKE_PROJECT
           ./kustomize edit set image gcr.io/GKE_PROJECT/IMAGE:TAG=gcr.io/$GKE_PROJECT/$IMAGE:$GITHUB_SHA
