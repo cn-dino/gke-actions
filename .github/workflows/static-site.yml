@@ -20,6 +20,8 @@ on:
   push:
     branches:
       - master
+    paths:
+      - static-site
 
 # Environment variables available to all jobs and steps in this workflow
 env:
