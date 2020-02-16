@@ -14,14 +14,14 @@
 # 2. create nodejs app to replicate same + show hostname
 # 3. create staging & deployment steps
 
-name: Build and Deploy to GKE
+name: Build and Deploy Static-Site to GKE
 
 on:
   push:
     branches:
       - master
     paths:
-      - static-site
+      - static-site/*
 
 # Environment variables available to all jobs and steps in this workflow
 env:
