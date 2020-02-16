@@ -21,7 +21,7 @@ on:
     branches:
       - master
     paths:
-      - static-site/*
+      - static-site/**
 
 # Environment variables available to all jobs and steps in this workflow
 env:
