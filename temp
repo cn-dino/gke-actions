@@ -1,0 +1,26 @@
+push.yml (Test & lint when (people create a feature branch):
+
+on:
+  push:
+    branches:
+      - '*/*'
+      -  '*'
+      - '!master' 
+ 
+
+master.yml (To deploy to a Staging environment):
+
+on:
+  push:
+    branches:
+      - master # Push events on master branch
+ 
+
+and finally I have release.yml (to deploy to production when we create a new tag):
+
+on:
+  push:
+    branches:
+      - releases/* # Push events to branches matching refs/heads/releases/*
+ 
+
