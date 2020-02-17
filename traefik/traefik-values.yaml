@@ -1,0 +1,12 @@
+# helm install --values values.yaml stable/traefik ----why also install the helm chart?
+dashboard:
+  enabled: true
+  domain: traefik-ui.cloudnative.company
+ssl:
+  enabled: true
+  enforced: true
+  generateTLS: true
+kubernetes:
+  namespaces:
+    - default
+    - kube-system
