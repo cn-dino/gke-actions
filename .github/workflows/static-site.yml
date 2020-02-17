@@ -1,11 +1,11 @@
 # https://github.com/GoogleCloudPlatform/github-actions/tree/docs/service-account-key/setup-gcloud#inputs
 #
 #  Variables:
-#  GKE_ZONE, GKE_CLUSTER, IMAGE 
+#  GKE_ZONE, GKE_CLUSTER, IMAGE
 
 # SECRETS USED
 # ------------
-# SA_EMAIL 
+# SA_EMAIL
 # GOOGLE_APPLICATION_CREDENTIALS (Base64 encoded JSON service account key)
 # GKE_PROJECT
 
@@ -22,6 +22,7 @@ on:
       - master
     paths:
       - static-site/**
+# only run on changes to static-site folder
 
 # Environment variables available to all jobs and steps in this workflow
 env:
