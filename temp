@@ -1,3 +1,17 @@
+todo
+
+how to handle infra changes (e.g. change replicas)? move infra folder into app folder?
+deploy traefik
+    multiple apps
+    e.g. serve front-end and api
+    create api driven app, e.g. ev-map?
+https://api.openchargemap.io/v3/poi/?output=json&countrycode=uk&maxresults=100&compact=true&verbose=false&latitude=52.039532&longitude=-0.556330&distance=20&distanceunit=miles&levelid=3&connectiontypeid=33
+    https://api.openchargemap.io/v3/referencedata/
+
+
+Notes on branches...
+--------------------
+
 push.yml (Test & lint when (people create a feature branch):
 
 on:
