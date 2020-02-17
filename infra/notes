@@ -1,0 +1,9 @@
+#get helm 3
+curl https://raw.githubusercontent.com/helm/helm/master/scripts/get-helm-3 | bash
+# add repo
+helm repo add stable https://kubernetes-charts.storage.googleapis.com
+# install traefik
+helm install stable/traefik --set dashboard.enabled=true,dashboard.domain=tdb.cloudnative.company
+
+#get external IP
+kubectl describe svc traefik --namespace default | grep Ingress | awk '{print $3}'

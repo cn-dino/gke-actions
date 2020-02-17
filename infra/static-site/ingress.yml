@@ -1,0 +1,15 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: gke-test-ingress
+  annotations:
+    kubernetes.io/ingress.class: traefik
+spec:
+  rules:
+  - host: cloudnative.company
+    http:
+      paths:
+      - path: /
+        backend:
+          serviceName: gke-test-service
+          servicePort: http
